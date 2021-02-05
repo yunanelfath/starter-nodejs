@@ -5,12 +5,13 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-	"start": "REDIS_HOST=192.168.66.100 REDIS_PORT=6379 node server.js"
+    "start": "MONGO_USERNAME=soren MONGO_PASSWORD=secret MONGO_HOST=192.168.66.100 MONGO_PORT=27017 MONGO_DB=admin REDIS_HOST=192.168.66.100 REDIS_PORT=6379 node server.js"
   },
   "author": "Yunan Kholilul",
   "license": "ISC",
   "dependencies": {
     "express": "^4.17.1",
+    "mongoose": "^5.11.15",
     "redis": "^3.0.2"
   }
 }

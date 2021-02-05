@@ -1,4 +1,6 @@
 const express = require('express')
+require('./src/models/db')
+
 const app = require('./index')
 const subscriber = require('./src/utils/subscriber')
 
